@@ -17,6 +17,8 @@
 		AE0A74F727A4FBFC00CF2B3B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A74F527A4FBFC00CF2B3B /* Device.swift */; };
 		AE0A74F827A4FBFC00CF2B3B /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A74F627A4FBFC00CF2B3B /* IndicatorView.swift */; };
 		AE0A74FB27A4FC0E00CF2B3B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A74FA27A4FC0E00CF2B3B /* BaseViewController.swift */; };
+		AE0A750227A5009A00CF2B3B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750127A5009A00CF2B3B /* Model.swift */; };
+		AE0A750427A500A700CF2B3B /* NetworkManager.wift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750327A500A700CF2B3B /* NetworkManager.wift.swift */; };
 		AEA2758727A4F9610042B490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2758627A4F9610042B490 /* AppDelegate.swift */; };
 		AEA2758927A4F9610042B490 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2758827A4F9610042B490 /* SceneDelegate.swift */; };
 		AEA2758B27A4F9610042B490 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2758A27A4F9610042B490 /* ViewController.swift */; };
@@ -37,6 +39,8 @@
 		AE0A74F527A4FBFC00CF2B3B /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = ../../../../../../Downloads/template/EduTemplate/Configuration/CommonClass/Device.swift; sourceTree = "<group>"; };
 		AE0A74F627A4FBFC00CF2B3B /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = ../../../../../../Downloads/template/EduTemplate/Configuration/CommonClass/IndicatorView.swift; sourceTree = "<group>"; };
 		AE0A74FA27A4FC0E00CF2B3B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../../../../../../Downloads/template/EduTemplate/Configuration/Base/BaseViewController.swift; sourceTree = "<group>"; };
+		AE0A750127A5009A00CF2B3B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		AE0A750327A500A700CF2B3B /* NetworkManager.wift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.wift.swift; sourceTree = "<group>"; };
 		AEA2758327A4F9610042B490 /* Zoop-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zoop-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA2758627A4F9610042B490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA2758827A4F9610042B490 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		AE0A74FC27A4FC1400CF2B3B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				AEA2758A27A4F9610042B490 /* ViewController.swift */,
+				AEA2758C27A4F9610042B490 /* Main.storyboard */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -86,6 +92,7 @@
 		AE0A74FD27A4FC1B00CF2B3B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				AE0A750327A500A700CF2B3B /* NetworkManager.wift.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -93,6 +100,7 @@
 		AE0A74FE27A4FC1E00CF2B3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AE0A750127A5009A00CF2B3B /* Model.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -122,8 +130,6 @@
 				AEA2759A27A4FA360042B490 /* Configuration */,
 				AEA2758627A4F9610042B490 /* AppDelegate.swift */,
 				AEA2758827A4F9610042B490 /* SceneDelegate.swift */,
-				AEA2758A27A4F9610042B490 /* ViewController.swift */,
-				AEA2758C27A4F9610042B490 /* Main.storyboard */,
 				AEA2758F27A4F9630042B490 /* Assets.xcassets */,
 				AEA2759127A4F9630042B490 /* LaunchScreen.storyboard */,
 				AEA2759427A4F9630042B490 /* Info.plist */,
@@ -236,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA2758B27A4F9610042B490 /* ViewController.swift in Sources */,
+				AE0A750427A500A700CF2B3B /* NetworkManager.wift.swift in Sources */,
 				AEA2758727A4F9610042B490 /* AppDelegate.swift in Sources */,
 				AE0A74F327A4FBE400CF2B3B /* Color.swift in Sources */,
 				AE0A74F827A4FBFC00CF2B3B /* IndicatorView.swift in Sources */,
@@ -245,6 +252,7 @@
 				AE0A74EE27A4FBE400CF2B3B /* UIViewController.swift in Sources */,
 				AE0A74F027A4FBE400CF2B3B /* UIButton.swift in Sources */,
 				AE0A74EF27A4FBE400CF2B3B /* UIFont.swift in Sources */,
+				AE0A750227A5009A00CF2B3B /* Model.swift in Sources */,
 				AEA2758927A4F9610042B490 /* SceneDelegate.swift in Sources */,
 				AEA2759C27A4FA430042B490 /* Constant.swift in Sources */,
 				AE0A74F127A4FBE400CF2B3B /* Date.swift in Sources */,
