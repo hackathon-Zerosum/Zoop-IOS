@@ -109,6 +109,7 @@ final class HomeViewController: UIViewController {
         }
     }
     
+
 }
 
 private extension HomeViewController {
@@ -208,6 +209,8 @@ extension HomeViewController: UICollectionViewDelegate {
         let vc = DateSelectViewController(city: "서울", borough: "강남구")
         self.navigationController?.pushViewController(vc, animated: true)
     }
+
+
 }
 
 

@@ -10,5 +10,11 @@ target 'Zoop-IOS' do
 	pod 'SnapKit', '~> 5.0.0'
 	pod 'FSCalendar'
 	pod 'Kingfisher', '~> 7.0'
+
 	pod "TTGTagCollectionView"
+
+	pod 'TweeTextField'
+	pod 'AnyFormatKit', '~> 2.5.2'
+pod 'Firebase/Messaging'
+
 end

@@ -7,7 +7,10 @@
 
 import Alamofire
 
+
+
 struct Constant {
+
     static let BASE_URL = "URL 주소를 입력해주세요"
     static let KOBIS_BASE_URL = "http://www.kobis.or.kr/kobisopenapi/webservice/rest"
     
@@ -45,4 +48,7 @@ struct Constant {
     ]
     
     static let url = "http://52.79.160.36:8080"
+
+    static let BASE_URL = "http://52.79.160.36:8080"
+
 }
