@@ -35,4 +35,14 @@ extension UIFont {
     static func NotoSans(_ type: NotoSansType, size: CGFloat) -> UIFont {
         return UIFont(name: "NotoSansCJKkr-\(type.rawValue)", size: size)!
     }
+    
+    public enum InterType: String {
+        case bold = "Bold"
+        case medium = "Medium"
+        case semiBold = "SemiBold"
+        case regular = "Regular"
+    }
+    static func InterFont(_ type: InterType, size: CGFloat) -> UIFont {
+        return UIFont(name: "Inter-\(type.rawValue)",size: size)!
+    }
 }

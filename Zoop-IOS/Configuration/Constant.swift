@@ -13,4 +13,5 @@ struct Constant {
     
     //
     static let search_Text = "어떤 여행지를 선택할까요?"
+    static let main_Text = "잉여 티켓을 저렴하게 ZOOP !"
 }
