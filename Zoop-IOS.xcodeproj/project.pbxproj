@@ -17,7 +17,6 @@
 		AE0A74F727A4FBFC00CF2B3B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A74F527A4FBFC00CF2B3B /* Device.swift */; };
 		AE0A74F827A4FBFC00CF2B3B /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A74F627A4FBFC00CF2B3B /* IndicatorView.swift */; };
 		AE0A74FB27A4FC0E00CF2B3B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A74FA27A4FC0E00CF2B3B /* BaseViewController.swift */; };
-		AE0A750027A4FD0900CF2B3B /* abc.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A74FF27A4FD0900CF2B3B /* abc.swift */; };
 		AEA2758727A4F9610042B490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2758627A4F9610042B490 /* AppDelegate.swift */; };
 		AEA2758927A4F9610042B490 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2758827A4F9610042B490 /* SceneDelegate.swift */; };
 		AEA2758B27A4F9610042B490 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2758A27A4F9610042B490 /* ViewController.swift */; };
@@ -38,7 +37,6 @@
 		AE0A74F527A4FBFC00CF2B3B /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Device.swift; path = ../../../../../../Downloads/template/EduTemplate/Configuration/CommonClass/Device.swift; sourceTree = "<group>"; };
 		AE0A74F627A4FBFC00CF2B3B /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IndicatorView.swift; path = ../../../../../../Downloads/template/EduTemplate/Configuration/CommonClass/IndicatorView.swift; sourceTree = "<group>"; };
 		AE0A74FA27A4FC0E00CF2B3B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../../../../../../Downloads/template/EduTemplate/Configuration/Base/BaseViewController.swift; sourceTree = "<group>"; };
-		AE0A74FF27A4FD0900CF2B3B /* abc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = abc.swift; sourceTree = "<group>"; };
 		AEA2758327A4F9610042B490 /* Zoop-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zoop-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA2758627A4F9610042B490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA2758827A4F9610042B490 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -148,7 +146,6 @@
 		AEA2759E27A4FA810042B490 /* Secret */ = {
 			isa = PBXGroup;
 			children = (
-				AE0A74FF27A4FD0900CF2B3B /* abc.swift */,
 			);
 			path = Secret;
 			sourceTree = "<group>";
@@ -249,7 +246,6 @@
 				AE0A74F027A4FBE400CF2B3B /* UIButton.swift in Sources */,
 				AE0A74EF27A4FBE400CF2B3B /* UIFont.swift in Sources */,
 				AEA2758927A4F9610042B490 /* SceneDelegate.swift in Sources */,
-				AE0A750027A4FD0900CF2B3B /* abc.swift in Sources */,
 				AEA2759C27A4FA430042B490 /* Constant.swift in Sources */,
 				AE0A74F127A4FBE400CF2B3B /* Date.swift in Sources */,
 				AE0A74ED27A4FBE400CF2B3B /* UINavigationBar.swift in Sources */,
