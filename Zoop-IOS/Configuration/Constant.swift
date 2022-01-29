@@ -12,4 +12,5 @@ struct Constant {
     static let KOBIS_BASE_URL = "http://www.kobis.or.kr/kobisopenapi/webservice/rest"
     
     //
+    static let search_Text = "어떤 여행지를 선택할까요?"
 }

@@ -20,10 +20,10 @@
 		AE0A74FB27A4FC0E00CF2B3B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A74FA27A4FC0E00CF2B3B /* BaseViewController.swift */; };
 		AE0A750227A5009A00CF2B3B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750127A5009A00CF2B3B /* Model.swift */; };
 		AE0A750427A500A700CF2B3B /* NetworkManager.wift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750327A500A700CF2B3B /* NetworkManager.wift.swift */; };
+		AE0A750727A512A400CF2B3B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750627A512A400CF2B3B /* HomeViewController.swift */; };
+		AE0A750927A514B200CF2B3B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750827A514B200CF2B3B /* HomePresenter.swift */; };
 		AEA2758727A4F9610042B490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2758627A4F9610042B490 /* AppDelegate.swift */; };
 		AEA2758927A4F9610042B490 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2758827A4F9610042B490 /* SceneDelegate.swift */; };
-		AEA2758B27A4F9610042B490 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2758A27A4F9610042B490 /* ViewController.swift */; };
-		AEA2758E27A4F9610042B490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA2758C27A4F9610042B490 /* Main.storyboard */; };
 		AEA2759027A4F9630042B490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA2758F27A4F9630042B490 /* Assets.xcassets */; };
 		AEA2759327A4F9630042B490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA2759127A4F9630042B490 /* LaunchScreen.storyboard */; };
 		AEA2759C27A4FA430042B490 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2759B27A4FA430042B490 /* Constant.swift */; };
@@ -45,11 +45,11 @@
 		AE0A74FA27A4FC0E00CF2B3B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseViewController.swift; path = ../../../../../../Downloads/template/EduTemplate/Configuration/Base/BaseViewController.swift; sourceTree = "<group>"; };
 		AE0A750127A5009A00CF2B3B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AE0A750327A500A700CF2B3B /* NetworkManager.wift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.wift.swift; sourceTree = "<group>"; };
+		AE0A750627A512A400CF2B3B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AE0A750827A514B200CF2B3B /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		AEA2758327A4F9610042B490 /* Zoop-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zoop-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA2758627A4F9610042B490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA2758827A4F9610042B490 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		AEA2758A27A4F9610042B490 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AEA2758D27A4F9610042B490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEA2758F27A4F9630042B490 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA2759227A4F9630042B490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA2759427A4F9630042B490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,8 +96,7 @@
 		AE0A74FC27A4FC1400CF2B3B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				AEA2758A27A4F9610042B490 /* ViewController.swift */,
-				AEA2758C27A4F9610042B490 /* Main.storyboard */,
+				AE0A750527A5129C00CF2B3B /* Home */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -116,6 +115,15 @@
 				AE0A750127A5009A00CF2B3B /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AE0A750527A5129C00CF2B3B /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AE0A750627A512A400CF2B3B /* HomeViewController.swift */,
+				AE0A750827A514B200CF2B3B /* HomePresenter.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 		AEA2757A27A4F9610042B490 = {
@@ -191,7 +199,6 @@
 				71CA01F867EE8486FBE19F1B /* Pods-Zoop-IOS.debug.xcconfig */,
 				26B180A3ACF8AD4267CBFE3D /* Pods-Zoop-IOS.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -257,7 +264,6 @@
 			files = (
 				AEA2759327A4F9630042B490 /* LaunchScreen.storyboard in Resources */,
 				AEA2759027A4F9630042B490 /* Assets.xcassets in Resources */,
-				AEA2758E27A4F9610042B490 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,9 +316,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AEA2758B27A4F9610042B490 /* ViewController.swift in Sources */,
 				AE0A750427A500A700CF2B3B /* NetworkManager.wift.swift in Sources */,
 				AEA2758727A4F9610042B490 /* AppDelegate.swift in Sources */,
+				AE0A750727A512A400CF2B3B /* HomeViewController.swift in Sources */,
 				AE0A74F327A4FBE400CF2B3B /* Color.swift in Sources */,
 				AE0A74F827A4FBFC00CF2B3B /* IndicatorView.swift in Sources */,
 				AE0A74F727A4FBFC00CF2B3B /* Device.swift in Sources */,
@@ -324,6 +330,7 @@
 				AE0A750227A5009A00CF2B3B /* Model.swift in Sources */,
 				AEA2758927A4F9610042B490 /* SceneDelegate.swift in Sources */,
 				AEA2759C27A4FA430042B490 /* Constant.swift in Sources */,
+				AE0A750927A514B200CF2B3B /* HomePresenter.swift in Sources */,
 				AE0A74F127A4FBE400CF2B3B /* Date.swift in Sources */,
 				AE0A74ED27A4FBE400CF2B3B /* UINavigationBar.swift in Sources */,
 			);
@@ -332,14 +339,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AEA2758C27A4F9610042B490 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AEA2758D27A4F9610042B490 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AEA2759127A4F9630042B490 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -480,7 +479,6 @@
 				INFOPLIST_FILE = "Zoop-IOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -510,7 +508,6 @@
 				INFOPLIST_FILE = "Zoop-IOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
