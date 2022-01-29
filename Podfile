@@ -10,4 +10,5 @@ target 'Zoop-IOS' do
 	pod 'SnapKit', '~> 5.0.0'
 	pod 'FSCalendar'
 	pod 'Kingfisher', '~> 7.0'
+	pod "TTGTagCollectionView"
 end

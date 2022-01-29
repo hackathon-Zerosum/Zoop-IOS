@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 final class TicketCollectionViewCell: UICollectionViewCell {
     static let identifier = "TicketCollectionViewCell"
@@ -106,10 +107,10 @@ final class TicketCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    func bind(title: String, image: String, discount: String, place: String) {
-        self.imageView.image = UIImage(named: image)
+    func bind(title: String, image: String, discount: Int, place: [String]) {
+        self.imageView.kf.setImage(with: URL(string: image)!)
         self.titleLabel.text = title
-        self.discountLabel.text = discount
-        self.placeLabel.text = place
+        self.discountLabel.text = "\(discount)"
+        self.placeLabel.text = place.joined(separator: ",") + "등"
     }
 }

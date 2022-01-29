@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Kingfisher
 
 enum Region: String, CaseIterable {
     case seoul
@@ -48,6 +49,8 @@ final class HomeViewController: UIViewController {
         view.layer.borderWidth = 1.0
         view.layer.borderColor = UIColor.mainColor.cgColor
         view.layer.cornerRadius = 28.0
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(didTapSearchView))
+        view.addGestureRecognizer(tapGesture)
         return view
     }()
     
@@ -86,6 +89,7 @@ final class HomeViewController: UIViewController {
         return colletionView
     }()
     
+    private var hotRegions: HotRegions?
     private lazy var currentLocationButton: UIButton = {
         let button = UIButton()
         button.setTitle("현재 위치로 보기", for: .normal)
@@ -99,6 +103,10 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configueUI()
+        RegionNetworkManager.getPopularRegion {
+            self.hotRegions = $0
+            self.ticketColletionView.reloadData()
+        }
     }
     
 }
@@ -163,28 +171,32 @@ private extension HomeViewController {
         }
     }
     
+    @objc func didTapSearchView() {
+        let regionSelectVC = RegionSelectViewController()
+        self.navigationController?.pushViewController(regionSelectVC, animated: true)
+    }
 }
 
 
 extension HomeViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return Region.allCases.count
+        return hotRegions?.states.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let region = Region.allCases[indexPath.row]
+        guard let hotRegions = hotRegions?.states else { return UICollectionViewCell() }
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TicketCollectionViewCell.identifier, for: indexPath)
         as! TicketCollectionViewCell
         
-        
-        cell.bind(title: region.title, image: region.rawValue,discount: region.dummyDisCount, place: region.dummyPlace)
+        let region = hotRegions[indexPath.row]
+        cell.bind(title: region.name, image: region.image,discount: region.max, place: region.tickets)
+
         return cell
-        
-        
     }
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
             return 1
     }
@@ -192,6 +204,10 @@ extension HomeViewController: UICollectionViewDataSource {
 }
 
 extension HomeViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DateSelectViewController(city: "서울", borough: "강남구")
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 

@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		94D80926D993572B42B39445 /* Pods_Zoop_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4C8995EC443514A3396F8A /* Pods_Zoop_IOS.framework */; };
-		AE0A750227A5009A00CF2B3B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750127A5009A00CF2B3B /* Model.swift */; };
-		AE0A750427A500A700CF2B3B /* NetworkManager.wift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750327A500A700CF2B3B /* NetworkManager.wift.swift */; };
+		AE0A750427A500A700CF2B3B /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750327A500A700CF2B3B /* NetworkManager.swift */; };
 		AE0A750727A512A400CF2B3B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750627A512A400CF2B3B /* HomeViewController.swift */; };
 		AE0A751D27A5205800CF2B3B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750D27A5205700CF2B3B /* Date.swift */; };
 		AE0A751E27A5205800CF2B3B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750E27A5205700CF2B3B /* String.swift */; };
@@ -39,14 +38,23 @@
 		AEEA515027A52B3B00D373D2 /* Inter-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEEA513E27A52B2000D373D2 /* Inter-Thin.ttf */; };
 		AEEA515127A52B3D00D373D2 /* Inter-VariableFont_slnt,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEEA514227A52B2100D373D2 /* Inter-VariableFont_slnt,wght.ttf */; };
 		AEEA515527A5355B00D373D2 /* TicketColletionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA515427A5355B00D373D2 /* TicketColletionViewCell.swift */; };
+		AEEA515E27A5637700D373D2 /* CityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA515D27A5637700D373D2 /* CityCell.swift */; };
+		AEEA516027A5648700D373D2 /* BoroughCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA515F27A5648700D373D2 /* BoroughCell.swift */; };
+		AEEA516227A56A5700D373D2 /* RegionSelectViewContrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA516127A56A5700D373D2 /* RegionSelectViewContrller.swift */; };
+		AEEA516627A5705500D373D2 /* BoroughBackgroudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA516527A5705500D373D2 /* BoroughBackgroudView.swift */; };
+		AEEA516927A5797900D373D2 /* DateSelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA516827A5797900D373D2 /* DateSelectViewController.swift */; };
+		AEEA516C27A597B000D373D2 /* TicketListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA516B27A597B000D373D2 /* TicketListViewController.swift */; };
+		AEEA517027A5AD5400D373D2 /* HeaderCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA516F27A5AD5400D373D2 /* HeaderCollectionCell.swift */; };
+		AEEA517227A5B0EB00D373D2 /* PostCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA517127A5B0EB00D373D2 /* PostCollectionCell.swift */; };
+		AEEA517427A5B64E00D373D2 /* Ticket.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA517327A5B64E00D373D2 /* Ticket.swift */; };
+		AEEA517627A5BD3200D373D2 /* RegionNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA517527A5BD3200D373D2 /* RegionNetworkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		26B180A3ACF8AD4267CBFE3D /* Pods-Zoop-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoop-IOS.release.xcconfig"; path = "Target Support Files/Pods-Zoop-IOS/Pods-Zoop-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		71CA01F867EE8486FBE19F1B /* Pods-Zoop-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoop-IOS.debug.xcconfig"; path = "Target Support Files/Pods-Zoop-IOS/Pods-Zoop-IOS.debug.xcconfig"; sourceTree = "<group>"; };
 		AB4C8995EC443514A3396F8A /* Pods_Zoop_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoop_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE0A750127A5009A00CF2B3B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		AE0A750327A500A700CF2B3B /* NetworkManager.wift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.wift.swift; sourceTree = "<group>"; };
+		AE0A750327A500A700CF2B3B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		AE0A750627A512A400CF2B3B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		AE0A750D27A5205700CF2B3B /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		AE0A750E27A5205700CF2B3B /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -78,6 +86,16 @@
 		AEEA514627A52B2100D373D2 /* Inter-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraLight.ttf"; sourceTree = "<group>"; };
 		AEEA514727A52B2100D373D2 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		AEEA515427A5355B00D373D2 /* TicketColletionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketColletionViewCell.swift; sourceTree = "<group>"; };
+		AEEA515D27A5637700D373D2 /* CityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityCell.swift; sourceTree = "<group>"; };
+		AEEA515F27A5648700D373D2 /* BoroughCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoroughCell.swift; sourceTree = "<group>"; };
+		AEEA516127A56A5700D373D2 /* RegionSelectViewContrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionSelectViewContrller.swift; sourceTree = "<group>"; };
+		AEEA516527A5705500D373D2 /* BoroughBackgroudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoroughBackgroudView.swift; sourceTree = "<group>"; };
+		AEEA516827A5797900D373D2 /* DateSelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectViewController.swift; sourceTree = "<group>"; };
+		AEEA516B27A597B000D373D2 /* TicketListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketListViewController.swift; sourceTree = "<group>"; };
+		AEEA516F27A5AD5400D373D2 /* HeaderCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderCollectionCell.swift; sourceTree = "<group>"; };
+		AEEA517127A5B0EB00D373D2 /* PostCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCollectionCell.swift; sourceTree = "<group>"; };
+		AEEA517327A5B64E00D373D2 /* Ticket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticket.swift; sourceTree = "<group>"; };
+		AEEA517527A5BD3200D373D2 /* RegionNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegionNetworkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +121,7 @@
 		AE0A74FC27A4FC1400CF2B3B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				AEEA516A27A5979400D373D2 /* TicketList */,
 				AEEA515A27A55B7800D373D2 /* Search */,
 				AEEA515727A53C5E00D373D2 /* Tabbar */,
 				AE0A750527A5129C00CF2B3B /* Home */,
@@ -113,7 +132,8 @@
 		AE0A74FD27A4FC1B00CF2B3B /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				AE0A750327A500A700CF2B3B /* NetworkManager.wift.swift */,
+				AE0A750327A500A700CF2B3B /* NetworkManager.swift */,
+				AEEA517527A5BD3200D373D2 /* RegionNetworkManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -121,7 +141,7 @@
 		AE0A74FE27A4FC1E00CF2B3B /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AE0A750127A5009A00CF2B3B /* Model.swift */,
+				AEEA517327A5B64E00D373D2 /* Ticket.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -152,9 +172,9 @@
 		AE0A751427A5205800CF2B3B /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				AEEA513F27A52B2000D373D2 /* Inter-Black.ttf */,
 				AEEA514027A52B2000D373D2 /* Inter-Bold.ttf */,
 				AEEA514527A52B2100D373D2 /* Inter-ExtraBold.ttf */,
+				AEEA513F27A52B2000D373D2 /* Inter-Black.ttf */,
 				AEEA514627A52B2100D373D2 /* Inter-ExtraLight.ttf */,
 				AEEA514427A52B2100D373D2 /* Inter-Light.ttf */,
 				AEEA514727A52B2100D373D2 /* Inter-Medium.ttf */,
@@ -233,8 +253,23 @@
 		AEEA515A27A55B7800D373D2 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				AEEA515D27A5637700D373D2 /* CityCell.swift */,
+				AEEA515F27A5648700D373D2 /* BoroughCell.swift */,
+				AEEA516127A56A5700D373D2 /* RegionSelectViewContrller.swift */,
+				AEEA516527A5705500D373D2 /* BoroughBackgroudView.swift */,
+				AEEA516827A5797900D373D2 /* DateSelectViewController.swift */,
 			);
 			path = Search;
+			sourceTree = "<group>";
+		};
+		AEEA516A27A5979400D373D2 /* TicketList */ = {
+			isa = PBXGroup;
+			children = (
+				AEEA516B27A597B000D373D2 /* TicketListViewController.swift */,
+				AEEA516F27A5AD5400D373D2 /* HeaderCollectionCell.swift */,
+				AEEA517127A5B0EB00D373D2 /* PostCollectionCell.swift */,
+			);
+			path = TicketList;
 			sourceTree = "<group>";
 		};
 		EA8719096C732C7A0191C308 /* Pods */ = {
@@ -373,18 +408,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AE0A750427A500A700CF2B3B /* NetworkManager.wift.swift in Sources */,
+				AE0A750427A500A700CF2B3B /* NetworkManager.swift in Sources */,
 				AEA2758727A4F9610042B490 /* AppDelegate.swift in Sources */,
+				AEEA516C27A597B000D373D2 /* TicketListViewController.swift in Sources */,
 				AE0A750727A512A400CF2B3B /* HomeViewController.swift in Sources */,
+				AEEA516627A5705500D373D2 /* BoroughBackgroudView.swift in Sources */,
+				AEEA517227A5B0EB00D373D2 /* PostCollectionCell.swift in Sources */,
 				AE0A752927A5205800CF2B3B /* Device.swift in Sources */,
 				AE0A752127A5205800CF2B3B /* UINavigationBar.swift in Sources */,
 				AE0A752027A5205800CF2B3B /* UIViewController.swift in Sources */,
+				AEEA515E27A5637700D373D2 /* CityCell.swift in Sources */,
+				AEEA517027A5AD5400D373D2 /* HeaderCollectionCell.swift in Sources */,
 				AE0A752827A5205800CF2B3B /* IndicatorView.swift in Sources */,
+				AEEA517427A5B64E00D373D2 /* Ticket.swift in Sources */,
 				AE0A751E27A5205800CF2B3B /* String.swift in Sources */,
+				AEEA516227A56A5700D373D2 /* RegionSelectViewContrller.swift in Sources */,
+				AEEA516927A5797900D373D2 /* DateSelectViewController.swift in Sources */,
 				AE0A751D27A5205800CF2B3B /* Date.swift in Sources */,
+				AEEA517627A5BD3200D373D2 /* RegionNetworkManager.swift in Sources */,
 				AE0A751F27A5205800CF2B3B /* UIButton.swift in Sources */,
+				AEEA516027A5648700D373D2 /* BoroughCell.swift in Sources */,
 				AEEA515527A5355B00D373D2 /* TicketColletionViewCell.swift in Sources */,
-				AE0A750227A5009A00CF2B3B /* Model.swift in Sources */,
 				AE0A752327A5205800CF2B3B /* Color.swift in Sources */,
 				AE0A752227A5205800CF2B3B /* UIFont.swift in Sources */,
 				AEA2758927A4F9610042B490 /* SceneDelegate.swift in Sources */,

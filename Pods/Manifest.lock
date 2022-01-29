@@ -3,12 +3,14 @@ PODS:
   - FSCalendar (2.8.2)
   - Kingfisher (7.1.2)
   - SnapKit (5.0.1)
+  - TTGTagCollectionView (2.1.0)
 
 DEPENDENCIES:
   - Alamofire (~> 5.5)
   - FSCalendar
   - Kingfisher (~> 7.0)
   - SnapKit (~> 5.0.0)
+  - TTGTagCollectionView
 
 SPEC REPOS:
   trunk:
@@ -16,13 +18,15 @@ SPEC REPOS:
     - FSCalendar
     - Kingfisher
     - SnapKit
+    - TTGTagCollectionView
 
 SPEC CHECKSUMS:
   Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
   FSCalendar: e6a2eb9c571bf0719ed797ef807e08426753c241
   Kingfisher: 44ed6a8504763f27bab46163adfac83f5deb240c
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  TTGTagCollectionView: a2a8668c659b39e7a6ffd6590475ea53a7ae95f7
 
-PODFILE CHECKSUM: ab527c5788611cbe5f9033358dd3fc709ad3857a
+PODFILE CHECKSUM: 843255136298239380bc5614f02448f872199cd9
 
 COCOAPODS: 1.11.2
