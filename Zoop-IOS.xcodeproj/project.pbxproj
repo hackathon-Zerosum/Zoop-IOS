@@ -8,10 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		94D80926D993572B42B39445 /* Pods_Zoop_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4C8995EC443514A3396F8A /* Pods_Zoop_IOS.framework */; };
+		A544ECB727A5228E00584F63 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544ECB527A5228E00584F63 /* SignInViewController.swift */; };
+		A544ECB827A5228E00584F63 /* SignInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A544ECB627A5228E00584F63 /* SignInViewController.xib */; };
+		A544ECBB27A522A700584F63 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544ECB927A522A700584F63 /* LogInViewController.swift */; };
+		A544ECBC27A522A700584F63 /* LogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A544ECBA27A522A700584F63 /* LogInViewController.xib */; };
+		A544ECBF27A52B3A00584F63 /* SignInDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544ECBE27A52B3A00584F63 /* SignInDataManager.swift */; };
+		A544ECC127A52B6300584F63 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544ECC027A52B6300584F63 /* SignInResponse.swift */; };
+		A544ECC527A52EC500584F63 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544ECC327A52EC500584F63 /* SplashViewController.swift */; };
+		A544ECC627A52EC500584F63 /* SplashViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A544ECC427A52EC500584F63 /* SplashViewController.xib */; };
+		A544ECC927A5634300584F63 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544ECC827A5634300584F63 /* SignInViewModel.swift */; };
+		A544ECCB27A57EB100584F63 /* SignInUserInfo .swift in Sources */ = {isa = PBXBuildFile; fileRef = A544ECCA27A57EB100584F63 /* SignInUserInfo .swift */; };
+		A544ECCF27A5909700584F63 /* DetailPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544ECCD27A5909700584F63 /* DetailPageViewController.swift */; };
+		A544ECD027A5909700584F63 /* DetailPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A544ECCE27A5909700584F63 /* DetailPageViewController.xib */; };
+		A544ECD527A5B27F00584F63 /* DetailPageDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544ECD427A5B27F00584F63 /* DetailPageDataManager.swift */; };
+		A544ECD927A5BAA400584F63 /* TicketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544ECD727A5BAA400584F63 /* TicketViewController.swift */; };
+		A544ECDA27A5BAA400584F63 /* TicketViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A544ECD827A5BAA400584F63 /* TicketViewController.xib */; };
+		A544ECDD27A5CFE700584F63 /* DetailPageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = A544ECDC27A5CFE700584F63 /* DetailPageResponse.swift */; };
 		AE0A750227A5009A00CF2B3B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750127A5009A00CF2B3B /* Model.swift */; };
 		AE0A750427A500A700CF2B3B /* NetworkManager.wift.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750327A500A700CF2B3B /* NetworkManager.wift.swift */; };
-		AE0A750727A512A400CF2B3B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750627A512A400CF2B3B /* HomeViewController.swift */; };
-		AE0A750927A514B200CF2B3B /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750827A514B200CF2B3B /* HomePresenter.swift */; };
 		AE0A751D27A5205800CF2B3B /* Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750D27A5205700CF2B3B /* Date.swift */; };
 		AE0A751E27A5205800CF2B3B /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750E27A5205700CF2B3B /* String.swift */; };
 		AE0A751F27A5205800CF2B3B /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A750F27A5205700CF2B3B /* UIButton.swift */; };
@@ -22,7 +36,6 @@
 		AE0A752427A5205800CF2B3B /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE0A751527A5205800CF2B3B /* NotoSansCJKkr-Medium.otf */; };
 		AE0A752527A5205800CF2B3B /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE0A751627A5205800CF2B3B /* NotoSansCJKkr-Regular.otf */; };
 		AE0A752627A5205800CF2B3B /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = AE0A751727A5205800CF2B3B /* NotoSansCJKkr-Bold.otf */; };
-		AE0A752727A5205800CF2B3B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A751927A5205800CF2B3B /* BaseViewController.swift */; };
 		AE0A752827A5205800CF2B3B /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A751B27A5205800CF2B3B /* IndicatorView.swift */; };
 		AE0A752927A5205800CF2B3B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A751C27A5205800CF2B3B /* Device.swift */; };
 		AEA2758727A4F9610042B490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA2758627A4F9610042B490 /* AppDelegate.swift */; };
@@ -35,11 +48,26 @@
 /* Begin PBXFileReference section */
 		26B180A3ACF8AD4267CBFE3D /* Pods-Zoop-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoop-IOS.release.xcconfig"; path = "Target Support Files/Pods-Zoop-IOS/Pods-Zoop-IOS.release.xcconfig"; sourceTree = "<group>"; };
 		71CA01F867EE8486FBE19F1B /* Pods-Zoop-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoop-IOS.debug.xcconfig"; path = "Target Support Files/Pods-Zoop-IOS/Pods-Zoop-IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		A544ECB527A5228E00584F63 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = ../../../../../../Documents/SignInViewController.swift; sourceTree = "<group>"; };
+		A544ECB627A5228E00584F63 /* SignInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = SignInViewController.xib; path = ../../../../../../Documents/SignInViewController.xib; sourceTree = "<group>"; };
+		A544ECB927A522A700584F63 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogInViewController.swift; path = ../../../../../../Documents/LogInViewController.swift; sourceTree = "<group>"; };
+		A544ECBA27A522A700584F63 /* LogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LogInViewController.xib; path = ../../../../../../Documents/LogInViewController.xib; sourceTree = "<group>"; };
+		A544ECBE27A52B3A00584F63 /* SignInDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInDataManager.swift; sourceTree = "<group>"; };
+		A544ECC027A52B6300584F63 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
+		A544ECC327A52EC500584F63 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		A544ECC427A52EC500584F63 /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
+		A544ECC827A5634300584F63 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		A544ECCA27A57EB100584F63 /* SignInUserInfo .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SignInUserInfo .swift"; sourceTree = "<group>"; };
+		A544ECCD27A5909700584F63 /* DetailPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageViewController.swift; sourceTree = "<group>"; };
+		A544ECCE27A5909700584F63 /* DetailPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailPageViewController.xib; sourceTree = "<group>"; };
+		A544ECD427A5B27F00584F63 /* DetailPageDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageDataManager.swift; sourceTree = "<group>"; };
+		A544ECD727A5BAA400584F63 /* TicketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketViewController.swift; sourceTree = "<group>"; };
+		A544ECD827A5BAA400584F63 /* TicketViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TicketViewController.xib; sourceTree = "<group>"; };
+		A544ECDB27A5C92D00584F63 /* Zoop-IOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Zoop-IOS.entitlements"; sourceTree = "<group>"; };
+		A544ECDC27A5CFE700584F63 /* DetailPageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPageResponse.swift; sourceTree = "<group>"; };
 		AB4C8995EC443514A3396F8A /* Pods_Zoop_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoop_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0A750127A5009A00CF2B3B /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		AE0A750327A500A700CF2B3B /* NetworkManager.wift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.wift.swift; sourceTree = "<group>"; };
-		AE0A750627A512A400CF2B3B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		AE0A750827A514B200CF2B3B /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
 		AE0A750D27A5205700CF2B3B /* Date.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Date.swift; sourceTree = "<group>"; };
 		AE0A750E27A5205700CF2B3B /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		AE0A750F27A5205700CF2B3B /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
@@ -50,7 +78,6 @@
 		AE0A751527A5205800CF2B3B /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
 		AE0A751627A5205800CF2B3B /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		AE0A751727A5205800CF2B3B /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
-		AE0A751927A5205800CF2B3B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AE0A751B27A5205800CF2B3B /* IndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		AE0A751C27A5205800CF2B3B /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
 		AEA2758327A4F9610042B490 /* Zoop-IOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Zoop-IOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,10 +109,85 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A544ECB327A5227400584F63 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				A544ECB527A5228E00584F63 /* SignInViewController.swift */,
+				A544ECB627A5228E00584F63 /* SignInViewController.xib */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		A544ECB427A5227C00584F63 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				A544ECB927A522A700584F63 /* LogInViewController.swift */,
+				A544ECBA27A522A700584F63 /* LogInViewController.xib */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
+		A544ECBD27A52B0F00584F63 /* SignInNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				A544ECBE27A52B3A00584F63 /* SignInDataManager.swift */,
+				A544ECC027A52B6300584F63 /* SignInResponse.swift */,
+				A544ECCA27A57EB100584F63 /* SignInUserInfo .swift */,
+			);
+			path = SignInNetWork;
+			sourceTree = "<group>";
+		};
+		A544ECC227A52EA600584F63 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				A544ECC327A52EC500584F63 /* SplashViewController.swift */,
+				A544ECC427A52EC500584F63 /* SplashViewController.xib */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		A544ECC727A531CD00584F63 /* LogInNetWork */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LogInNetWork;
+			sourceTree = "<group>";
+		};
+		A544ECCC27A5907000584F63 /* DetailPage */ = {
+			isa = PBXGroup;
+			children = (
+				A544ECCD27A5909700584F63 /* DetailPageViewController.swift */,
+				A544ECCE27A5909700584F63 /* DetailPageViewController.xib */,
+			);
+			path = DetailPage;
+			sourceTree = "<group>";
+		};
+		A544ECD327A5B25400584F63 /* DetailPageNetWork */ = {
+			isa = PBXGroup;
+			children = (
+				A544ECD427A5B27F00584F63 /* DetailPageDataManager.swift */,
+				A544ECDC27A5CFE700584F63 /* DetailPageResponse.swift */,
+			);
+			path = DetailPageNetWork;
+			sourceTree = "<group>";
+		};
+		A544ECD627A5BA8800584F63 /* Ticket */ = {
+			isa = PBXGroup;
+			children = (
+				A544ECD727A5BAA400584F63 /* TicketViewController.swift */,
+				A544ECD827A5BAA400584F63 /* TicketViewController.xib */,
+			);
+			path = Ticket;
+			sourceTree = "<group>";
+		};
 		AE0A74FC27A4FC1400CF2B3B /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				AE0A750527A5129C00CF2B3B /* Home */,
+				A544ECD627A5BA8800584F63 /* Ticket */,
+				A544ECCC27A5907000584F63 /* DetailPage */,
+				A544ECC227A52EA600584F63 /* Splash */,
+				A544ECB427A5227C00584F63 /* LogIn */,
+				A544ECB327A5227400584F63 /* SignIn */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -93,6 +195,9 @@
 		AE0A74FD27A4FC1B00CF2B3B /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				A544ECD327A5B25400584F63 /* DetailPageNetWork */,
+				A544ECC727A531CD00584F63 /* LogInNetWork */,
+				A544ECBD27A52B0F00584F63 /* SignInNetWork */,
 				AE0A750327A500A700CF2B3B /* NetworkManager.wift.swift */,
 			);
 			path = Network;
@@ -102,17 +207,9 @@
 			isa = PBXGroup;
 			children = (
 				AE0A750127A5009A00CF2B3B /* Model.swift */,
+				A544ECC827A5634300584F63 /* SignInViewModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		AE0A750527A5129C00CF2B3B /* Home */ = {
-			isa = PBXGroup;
-			children = (
-				AE0A750627A512A400CF2B3B /* HomeViewController.swift */,
-				AE0A750827A514B200CF2B3B /* HomePresenter.swift */,
-			);
-			path = Home;
 			sourceTree = "<group>";
 		};
 		AE0A750C27A5205700CF2B3B /* Extension */ = {
@@ -137,14 +234,6 @@
 				AE0A751727A5205800CF2B3B /* NotoSansCJKkr-Bold.otf */,
 			);
 			path = Font;
-			sourceTree = "<group>";
-		};
-		AE0A751827A5205800CF2B3B /* Base */ = {
-			isa = PBXGroup;
-			children = (
-				AE0A751927A5205800CF2B3B /* BaseViewController.swift */,
-			);
-			path = Base;
 			sourceTree = "<group>";
 		};
 		AE0A751A27A5205800CF2B3B /* CommonClass */ = {
@@ -177,6 +266,7 @@
 		AEA2758527A4F9610042B490 /* Zoop-IOS */ = {
 			isa = PBXGroup;
 			children = (
+				A544ECDB27A5C92D00584F63 /* Zoop-IOS.entitlements */,
 				AE0A74FE27A4FC1E00CF2B3B /* Model */,
 				AE0A74FD27A4FC1B00CF2B3B /* Network */,
 				AE0A74FC27A4FC1400CF2B3B /* Presentation */,
@@ -193,21 +283,12 @@
 		AEA2759A27A4FA360042B490 /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				AE0A751827A5205800CF2B3B /* Base */,
 				AE0A751A27A5205800CF2B3B /* CommonClass */,
 				AE0A750C27A5205700CF2B3B /* Extension */,
 				AE0A751427A5205800CF2B3B /* Font */,
-				AEA2759E27A4FA810042B490 /* Secret */,
 				AEA2759B27A4FA430042B490 /* Constant.swift */,
 			);
 			path = Configuration;
-			sourceTree = "<group>";
-		};
-		AEA2759E27A4FA810042B490 /* Secret */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Secret;
 			sourceTree = "<group>";
 		};
 		EA8719096C732C7A0191C308 /* Pods */ = {
@@ -281,9 +362,14 @@
 			files = (
 				AEA2759327A4F9630042B490 /* LaunchScreen.storyboard in Resources */,
 				AE0A752627A5205800CF2B3B /* NotoSansCJKkr-Bold.otf in Resources */,
+				A544ECD027A5909700584F63 /* DetailPageViewController.xib in Resources */,
 				AE0A752527A5205800CF2B3B /* NotoSansCJKkr-Regular.otf in Resources */,
+				A544ECDA27A5BAA400584F63 /* TicketViewController.xib in Resources */,
+				A544ECC627A52EC500584F63 /* SplashViewController.xib in Resources */,
 				AEA2759027A4F9630042B490 /* Assets.xcassets in Resources */,
+				A544ECB827A5228E00584F63 /* SignInViewController.xib in Resources */,
 				AE0A752427A5205800CF2B3B /* NotoSansCJKkr-Medium.otf in Resources */,
+				A544ECBC27A522A700584F63 /* LogInViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,21 +424,29 @@
 			files = (
 				AE0A750427A500A700CF2B3B /* NetworkManager.wift.swift in Sources */,
 				AEA2758727A4F9610042B490 /* AppDelegate.swift in Sources */,
-				AE0A750727A512A400CF2B3B /* HomeViewController.swift in Sources */,
+				A544ECBB27A522A700584F63 /* LogInViewController.swift in Sources */,
 				AE0A752927A5205800CF2B3B /* Device.swift in Sources */,
+				A544ECCF27A5909700584F63 /* DetailPageViewController.swift in Sources */,
+				A544ECC927A5634300584F63 /* SignInViewModel.swift in Sources */,
 				AE0A752127A5205800CF2B3B /* UINavigationBar.swift in Sources */,
 				AE0A752027A5205800CF2B3B /* UIViewController.swift in Sources */,
-				AE0A752727A5205800CF2B3B /* BaseViewController.swift in Sources */,
+				A544ECD927A5BAA400584F63 /* TicketViewController.swift in Sources */,
+				A544ECC127A52B6300584F63 /* SignInResponse.swift in Sources */,
 				AE0A752827A5205800CF2B3B /* IndicatorView.swift in Sources */,
+				A544ECB727A5228E00584F63 /* SignInViewController.swift in Sources */,
+				A544ECCB27A57EB100584F63 /* SignInUserInfo .swift in Sources */,
 				AE0A751E27A5205800CF2B3B /* String.swift in Sources */,
 				AE0A751D27A5205800CF2B3B /* Date.swift in Sources */,
 				AE0A751F27A5205800CF2B3B /* UIButton.swift in Sources */,
 				AE0A750227A5009A00CF2B3B /* Model.swift in Sources */,
 				AE0A752327A5205800CF2B3B /* Color.swift in Sources */,
+				A544ECC527A52EC500584F63 /* SplashViewController.swift in Sources */,
 				AE0A752227A5205800CF2B3B /* UIFont.swift in Sources */,
 				AEA2758927A4F9610042B490 /* SceneDelegate.swift in Sources */,
+				A544ECDD27A5CFE700584F63 /* DetailPageResponse.swift in Sources */,
+				A544ECD527A5B27F00584F63 /* DetailPageDataManager.swift in Sources */,
 				AEA2759C27A4FA430042B490 /* Constant.swift in Sources */,
-				AE0A750927A514B200CF2B3B /* HomePresenter.swift in Sources */,
+				A544ECBF27A52B3A00584F63 /* SignInDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,6 +586,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Zoop-IOS/Zoop-IOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HWBJNMY98D;
@@ -521,6 +616,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Zoop-IOS/Zoop-IOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = HWBJNMY98D;

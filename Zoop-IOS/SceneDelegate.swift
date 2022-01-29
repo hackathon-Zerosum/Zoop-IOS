@@ -19,7 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         self.window = UIWindow(windowScene: windowScene)
-        let vc = UINavigationController(rootViewController: HomeViewController())
+        
+        let vc = DetailPageViewController(nibName: "DetailPageViewController", bundle: nil)
         self.window?.rootViewController = vc
         self.window?.backgroundColor = .systemBackground
         self.window?.makeKeyAndVisible()

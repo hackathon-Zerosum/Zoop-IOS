@@ -37,11 +37,7 @@ final class HomeViewController: BaseViewController {
         super.viewDidLoad()
     }
     
-    override func configueUI() {
-        [
-            sea
-        ]
-    }
+   
 }
 
 import SwiftUI

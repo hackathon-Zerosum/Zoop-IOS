@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="Zoop_IOS" customModuleProvider="target">
+            <connections>
+                <outlet property="loginButton" destination="She-mG-jYI" id="B9j-PQ-zZD"/>
+                <outlet property="signInButton" destination="i5h-cP-jEi" id="dny-Ev-esN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splashImage" translatesAutoresizingMaskIntoConstraints="NO" id="pRS-ah-JLg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i5h-cP-jEi">
+                    <rect key="frame" x="21" y="748" width="372" height="48"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="fxU-34-FU0"/>
+                    </constraints>
+                    <color key="tintColor" red="0.54117647058823526" green="0.66666666666666663" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="로그인">
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="loginBtn:" destination="-1" eventType="touchUpInside" id="Xdi-mf-70p"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="잉여 티켓 거래 플랫폼" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DG-qs-5Em">
+                    <rect key="frame" x="17" y="120" width="313" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ZOOP!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjl-pQ-qJs">
+                    <rect key="frame" x="17" y="158.5" width="102.5" height="38.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="32"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="여행 티켓을 저렴하게 줍줍하세요" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFg-S9-nWG">
+                    <rect key="frame" x="21" y="219" width="232" height="22"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="She-mG-jYI">
+                    <rect key="frame" x="21" y="686" width="372" height="48"/>
+                    <color key="backgroundColor" red="0.54117647058823526" green="0.66666666666666663" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="eCV-45-tv2"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="회원가입">
+                        <fontDescription key="titleFontDescription" type="system" weight="semibold" pointSize="14"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="signinBtn:" destination="-1" eventType="touchUpInside" id="6as-UT-alc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="pRS-ah-JLg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0Pi-j1-5Q6"/>
+                <constraint firstItem="She-mG-jYI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="2me-Id-rv6"/>
+                <constraint firstItem="Vjl-pQ-qJs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="61F-At-pQE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="She-mG-jYI" secondAttribute="trailing" constant="21" id="CBw-Ve-AU2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="i5h-cP-jEi" secondAttribute="bottom" constant="66" id="OM6-ty-q2W"/>
+                <constraint firstItem="Vjl-pQ-qJs" firstAttribute="top" secondItem="1DG-qs-5Em" secondAttribute="bottom" id="RID-P5-Efh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="1DG-qs-5Em" secondAttribute="trailing" constant="84" id="UWz-e7-2vW"/>
+                <constraint firstItem="pRS-ah-JLg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="XQZ-23-LKZ"/>
+                <constraint firstAttribute="bottom" secondItem="pRS-ah-JLg" secondAttribute="bottom" id="Yfw-v8-EGg"/>
+                <constraint firstItem="FFg-S9-nWG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="Ykf-gx-mYU"/>
+                <constraint firstItem="i5h-cP-jEi" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="21" id="dRr-wY-krj"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="pRS-ah-JLg" secondAttribute="trailing" id="fMl-Di-b56"/>
+                <constraint firstItem="i5h-cP-jEi" firstAttribute="top" secondItem="She-mG-jYI" secondAttribute="bottom" constant="14" id="fU9-kY-W2H"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="i5h-cP-jEi" secondAttribute="trailing" constant="21" id="pUI-d1-CCW"/>
+                <constraint firstItem="FFg-S9-nWG" firstAttribute="top" secondItem="Vjl-pQ-qJs" secondAttribute="bottom" constant="22" id="rlz-QI-uHi"/>
+                <constraint firstItem="1DG-qs-5Em" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="17" id="uDn-1O-TUo"/>
+                <constraint firstItem="1DG-qs-5Em" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="76" id="xpr-z4-Kwk"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="splashImage" width="1170" height="2532"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
