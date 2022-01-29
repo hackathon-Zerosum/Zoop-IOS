@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		94D80926D993572B42B39445 /* Pods_Zoop_IOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB4C8995EC443514A3396F8A /* Pods_Zoop_IOS.framework */; };
 		AE0A74ED27A4FBE400CF2B3B /* UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A74E627A4FBE400CF2B3B /* UINavigationBar.swift */; };
 		AE0A74EE27A4FBE400CF2B3B /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A74E727A4FBE400CF2B3B /* UIViewController.swift */; };
 		AE0A74EF27A4FBE400CF2B3B /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE0A74E827A4FBE400CF2B3B /* UIFont.swift */; };
@@ -29,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		26B180A3ACF8AD4267CBFE3D /* Pods-Zoop-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoop-IOS.release.xcconfig"; path = "Target Support Files/Pods-Zoop-IOS/Pods-Zoop-IOS.release.xcconfig"; sourceTree = "<group>"; };
+		71CA01F867EE8486FBE19F1B /* Pods-Zoop-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zoop-IOS.debug.xcconfig"; path = "Target Support Files/Pods-Zoop-IOS/Pods-Zoop-IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		AB4C8995EC443514A3396F8A /* Pods_Zoop_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zoop_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0A74E627A4FBE400CF2B3B /* UINavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UINavigationBar.swift; path = ../../../../../../Downloads/template/EduTemplate/Configuration/Extension/UINavigationBar.swift; sourceTree = "<group>"; };
 		AE0A74E727A4FBE400CF2B3B /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewController.swift; path = ../../../../../../Downloads/template/EduTemplate/Configuration/Extension/UIViewController.swift; sourceTree = "<group>"; };
 		AE0A74E827A4FBE400CF2B3B /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIFont.swift; path = ../../../../../../Downloads/template/EduTemplate/Configuration/Extension/UIFont.swift; sourceTree = "<group>"; };
@@ -57,12 +61,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94D80926D993572B42B39445 /* Pods_Zoop_IOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27A17BDE9BAFF4E0C885008B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB4C8995EC443514A3396F8A /* Pods_Zoop_IOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AE0A74F427A4FBEF00CF2B3B /* CommonClass */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +123,8 @@
 			children = (
 				AEA2758527A4F9610042B490 /* Zoop-IOS */,
 				AEA2758427A4F9610042B490 /* Products */,
+				EA8719096C732C7A0191C308 /* Pods */,
+				27A17BDE9BAFF4E0C885008B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,6 +185,16 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		EA8719096C732C7A0191C308 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				71CA01F867EE8486FBE19F1B /* Pods-Zoop-IOS.debug.xcconfig */,
+				26B180A3ACF8AD4267CBFE3D /* Pods-Zoop-IOS.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -177,9 +202,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AEA2759727A4F9630042B490 /* Build configuration list for PBXNativeTarget "Zoop-IOS" */;
 			buildPhases = (
+				0535BC38014F5A3BD86B54BB /* [CP] Check Pods Manifest.lock */,
 				AEA2757F27A4F9610042B490 /* Sources */,
 				AEA2758027A4F9610042B490 /* Frameworks */,
 				AEA2758127A4F9610042B490 /* Resources */,
+				642E5F006B912A46C393EE57 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +262,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0535BC38014F5A3BD86B54BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Zoop-IOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		642E5F006B912A46C393EE57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zoop-IOS/Pods-Zoop-IOS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Zoop-IOS/Pods-Zoop-IOS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Zoop-IOS/Pods-Zoop-IOS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AEA2757F27A4F9610042B490 /* Sources */ = {
@@ -400,6 +469,7 @@
 		};
 		AEA2759827A4F9630042B490 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 71CA01F867EE8486FBE19F1B /* Pods-Zoop-IOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -429,6 +499,7 @@
 		};
 		AEA2759927A4F9630042B490 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B180A3ACF8AD4267CBFE3D /* Pods-Zoop-IOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
