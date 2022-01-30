@@ -11,6 +11,8 @@
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
+		<key>FirebaseAppDelegateProxyEnabled</key>
+		<false/>
 		<key>UIApplicationSupportsMultipleScenes</key>
 		<false/>
 		<key>UISceneConfigurations</key>

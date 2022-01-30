@@ -52,6 +52,12 @@ final class TicketCollectionViewCell: UICollectionViewCell {
         return view
     }()
     
+    private lazy var ticketLineImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named:"ticketLine")
+        return imageView
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         self.configureUI()
@@ -63,6 +69,7 @@ final class TicketCollectionViewCell: UICollectionViewCell {
     
     private func configureUI() {
         [
+            ticketLineImageView,
             imageView,
             titleLabel,
             ticketInfoView
@@ -96,21 +103,28 @@ final class TicketCollectionViewCell: UICollectionViewCell {
         
         self.placeLabel.snp.makeConstraints { make in
             make.leading.equalToSuperview().inset(8.0)
-            make.top.equalToSuperview().inset(8.0)
+            make.top.equalToSuperview().inset(16.0)
             make.bottom.equalToSuperview().inset(8.0)
         }
         
+        self.ticketLineImageView.snp.makeConstraints { make in
+          
+            make.top.equalTo(self.imageView.snp.bottom)
+            make.leading.trailing.equalTo(self.imageView).inset(8.0)
+            make.height.equalTo(8.0)
+        }
         
         self.ticketInfoView.snp.makeConstraints { make in
             make.leading.trailing.bottom.equalToSuperview()
-            make.top.equalTo(imageView.snp.bottom)
+            make.top.equalTo(ticketLineImageView.snp.bottom)
         }
+        self.contentView.bringSubviewToFront(self.ticketLineImageView)
     }
     
     func bind(title: String, image: String, discount: Int, place: [String]) {
         self.imageView.kf.setImage(with: URL(string: image)!)
         self.titleLabel.text = title
-        self.discountLabel.text = "\(discount)"
+        self.discountLabel.text = "\(discount)%"
         self.placeLabel.text = place.joined(separator: ",") + "등"
     }
 }

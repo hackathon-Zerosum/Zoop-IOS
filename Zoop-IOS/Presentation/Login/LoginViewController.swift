@@ -11,9 +11,7 @@ import TweeTextField
 
 final class LoginViewController: UIViewController {
     
-    private lazy var idTextField: TweeTextField = {
-        
-    }()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

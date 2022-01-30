@@ -20,6 +20,11 @@ class DetailPageViewController: UIViewController {
     
     @IBOutlet weak var ticketNameLabel: UILabel!
     
+    @IBOutlet weak var heartButton: UIButton! {
+        didSet {
+            heartButton.sizeToFit()
+        }
+    }
     @IBOutlet weak var ticketBeginLabel: UILabel!
     @IBOutlet weak var ticketEndLabel: UILabel!
     
@@ -29,29 +34,47 @@ class DetailPageViewController: UIViewController {
     @IBOutlet weak var discountLabel: UILabel!
     
     @IBOutlet weak var sellingLabel: UILabel!
-    
+    var ticketId: Int?
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.view.backgroundColor = .systemBackground
         self.buyingButton.layer.cornerRadius = 8
         self.timerButton.layer.cornerRadius = 8
         self.timerButton.layer.borderWidth = 2
         self.timerButton.layer.borderColor = UIColor.projectTintColor.cgColor
         
-        DetailPageDataManager().DetailPageData(self)
+        if let ticketId = ticketId {
+            DetailPageDataManager().DetailPageData(ticketId: ticketId, self)
+        }
+        
         
 
     }
 
     
     @IBAction func cancelButton(_ sender: Any) {
-        navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true, completion: nil)
     }
     
     @IBAction func heartButton(_ sender: Any) {
+        TicketNetworkManager.updateLiketTicket(ticketId: self.ticketId!) { isLiked in
+            if isLiked.likes {
+                self.heartButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+            } else {
+                self.heartButton.setImage(UIImage(systemName: "heart"), for: .normal)
+            }
+        }
     }
     
-
+    @IBAction func didTapBuyButton(_ sender: Any) {
+        
+        let tabbarController = self.presentingViewController as! UITabBarController
+        let vc = tabbarController.viewControllers![1] as! TicketViewController
+        vc.ticketId = self.ticketId!
+        tabbarController.selectedViewController = vc
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 
 }
 
@@ -67,5 +90,16 @@ extension DetailPageViewController {
         self.originLabel.text = String(response.ticket.originPrice)
         self.discountLabel.text = String(response.ticket.discount)
         self.sellingLabel.text = String(response.ticket.sellingPrice)
+        
+        if response.able == false {
+            self.buyingButton.backgroundColor = .gray
+            self.buyingButton.isEnabled = false
+        }
+        
+        if response.likes {
+            self.heartButton.setImage(UIImage(systemName: "heart.fill"), for: .normal)
+        } else {
+            self.heartButton.setImage(UIImage(systemName: "heart"), for: .normal)
+        }
     }
 }

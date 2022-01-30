@@ -238,7 +238,13 @@ extension TicketListViewController: UICollectionViewDataSource {
 }
 
 extension TicketListViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = DetailPageViewController(nibName: "DetailPageViewController", bundle: nil)
+        let ticketId = self.tickets[indexPath.row].ticketId
+        vc.ticketId = ticketId
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true, completion: nil)
+    }
 }
 private extension TicketListViewController {
     func configureUI() {

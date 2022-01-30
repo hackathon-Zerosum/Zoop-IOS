@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,9 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TicketViewController" customModule="Zoop_IOS" customModuleProvider="target">
             <connections>
                 <outlet property="bottomTicketView" destination="jbL-Ri-99k" id="sFd-9H-z0K"/>
-                <outlet property="labelView" destination="NrY-f1-1lk" id="Ii5-ta-DXP"/>
                 <outlet property="ticketImage" destination="E2F-I2-Kls" id="7cm-XD-Hy1"/>
-                <outlet property="ticketLabel" destination="bSR-bb-m1A" id="ehV-df-srG"/>
                 <outlet property="upperTicketView" destination="c0N-Ec-s3j" id="y9K-Yz-FQb"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -58,39 +56,15 @@
                     <rect key="frame" x="45" y="96" width="324" height="538"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="E2F-I2-Kls">
-                            <rect key="frame" x="0.0" y="0.0" width="324" height="428"/>
+                            <rect key="frame" x="0.0" y="0.0" width="324" height="538"/>
                         </imageView>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NrY-f1-1lk">
-                            <rect key="frame" x="0.0" y="428" width="324" height="110"/>
-                            <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bSR-bb-m1A">
-                                    <rect key="frame" x="34" y="22" width="42" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ticketLine" translatesAutoresizingMaskIntoConstraints="NO" id="pZu-Ou-pMO">
-                                    <rect key="frame" x="0.0" y="95" width="324" height="25"/>
-                                </imageView>
-                            </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <constraints>
-                                <constraint firstItem="pZu-Ou-pMO" firstAttribute="leading" secondItem="NrY-f1-1lk" secondAttribute="leading" id="NPh-If-JF9"/>
-                                <constraint firstAttribute="trailing" secondItem="pZu-Ou-pMO" secondAttribute="trailing" id="PPe-dv-gyC"/>
-                                <constraint firstAttribute="height" constant="110" id="n6y-Tt-AdM"/>
-                            </constraints>
-                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="NrY-f1-1lk" secondAttribute="trailing" id="E6C-Sc-lMx"/>
-                        <constraint firstItem="NrY-f1-1lk" firstAttribute="top" secondItem="E2F-I2-Kls" secondAttribute="bottom" id="EMY-FQ-K5h"/>
+                        <constraint firstAttribute="bottom" secondItem="E2F-I2-Kls" secondAttribute="bottom" id="A2D-nx-8bw"/>
                         <constraint firstItem="E2F-I2-Kls" firstAttribute="leading" secondItem="c0N-Ec-s3j" secondAttribute="leading" id="Jpt-Ai-SiA"/>
-                        <constraint firstItem="NrY-f1-1lk" firstAttribute="leading" secondItem="c0N-Ec-s3j" secondAttribute="leading" id="UcN-Oh-0jy"/>
                         <constraint firstItem="E2F-I2-Kls" firstAttribute="top" secondItem="c0N-Ec-s3j" secondAttribute="top" id="a6h-BO-84c"/>
                         <constraint firstAttribute="trailing" secondItem="E2F-I2-Kls" secondAttribute="trailing" id="hZG-A3-lu1"/>
-                        <constraint firstAttribute="bottom" secondItem="NrY-f1-1lk" secondAttribute="bottom" id="jyJ-4P-BNs"/>
                     </constraints>
                 </view>
             </subviews>
@@ -101,7 +75,6 @@
                 <constraint firstAttribute="bottom" secondItem="jbL-Ri-99k" secondAttribute="bottom" constant="122" id="CIc-FU-fqC"/>
                 <constraint firstItem="c0N-Ec-s3j" firstAttribute="top" secondItem="Bou-b5-ead" secondAttribute="bottom" constant="18" id="E8I-Xo-LYn"/>
                 <constraint firstItem="jbL-Ri-99k" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="EDP-n0-yfN"/>
-                <constraint firstItem="pZu-Ou-pMO" firstAttribute="baseline" secondItem="jbL-Ri-99k" secondAttribute="firstBaseline" constant="10" id="NPt-yV-aG2"/>
                 <constraint firstItem="jbL-Ri-99k" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="45" id="Z5T-24-89H"/>
                 <constraint firstItem="0Gm-KQ-9Ka" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="166" id="ZLu-hU-XlD"/>
                 <constraint firstItem="Bou-b5-ead" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="b1F-s4-zc7"/>
@@ -117,7 +90,6 @@
     <resources>
         <image name="backTicket" width="696" height="1440"/>
         <image name="barcode" width="180" height="100.33333587646484"/>
-        <image name="ticketLine" width="1112" height="25"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -107,13 +107,13 @@ final class HomeViewController: UIViewController {
             self.hotRegions = $0
             self.ticketColletionView.reloadData()
         }
+        
     }
-    
-
 }
 
 private extension HomeViewController {
     func configueUI() {
+        self.view.backgroundColor = .systemBackground
         
         [
             searchView,
@@ -134,7 +134,7 @@ private extension HomeViewController {
         
         searchView.snp.makeConstraints { make in
             make.left.trailing.equalToSuperview().inset(17.0)
-            make.top.equalTo(self.view.safeAreaLayoutGuide).offset(8.0)
+            make.top.equalTo(self.view.safeAreaLayoutGuide)
             make.height.equalTo(56.0)
             
         }

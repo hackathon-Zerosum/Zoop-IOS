@@ -9,11 +9,11 @@ import Foundation
 import Alamofire
 
 class DetailPageDataManager {
-    func DetailPageData( _ viewController: DetailPageViewController) {
+    func DetailPageData(ticketId: Int ,_ viewController: DetailPageViewController) {
         let JWToken : String = "eyJraWQiOiJrZXkxIiwiYWxnIjoiSFM1MTIifQ.eyJzdWIiOiIxIiwibmlja25hbWUiOiJiYiIsImlhdCI6MTY0MzQ2MTQyNSwiZXhwIjoxNjUyMTAxNDI1fQ.1NmXe_fmyHMwWqmr1uylgn-fvmLgEjZI27bj4hOjN3VchOoZ9D4OutvxjgZLRbLzjjEuhLpFoY9TeIMj44Hqgw"
         
         
-        AF.request("http://52.79.160.36:8080/ticket/1",
+        AF.request("http://52.79.160.36:8080/ticket/\(ticketId)",
                    method: .get,
                    parameters: nil,
                    encoding: URLEncoding.default,

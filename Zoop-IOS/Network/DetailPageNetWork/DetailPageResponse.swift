@@ -11,6 +11,7 @@ struct DetailPageResponse: Decodable {
     var seller : seller
     var likes: Bool
     var ticket : ticket
+    let able: Bool
 }
 
 struct seller: Decodable {

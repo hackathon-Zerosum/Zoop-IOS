@@ -1,34 +1,47 @@
-//
-//  AppDelegate.swift
-//  Zoop-IOS
-//
-//  Created by 재영신 on 2022/01/29.
-//
-
 import UIKit
+
 import Firebase
+
 import FirebaseMessaging
+
+
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
-
+    var window: UIWindow?
+    var device_Token = ""
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+      
+       
+     
+     
+        FirebaseApp.configure()
+        
+        Messaging.messaging().delegate = self
+        
+        UNUserNotificationCenter.current().delegate = self
         
         
-//        FirebaseApp.configure()
-//        Messaging.messaging().delegate = self
-//        UNUserNotificationCenter.current().delegate = self
-      let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-        UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { _, _ in }
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(options: authOptions) { granted, error in
+            if granted {
+                print("알림 등록이 완료되었습니다.")
+            }
+        }
+        
         application.registerForRemoteNotifications()
-      return true
+        if UserDefaults.standard.bool(forKey: "Setting1") == true {
+            application.unregisterForRemoteNotifications()
+        }
+        
+        return true
     }
 
     // MARK: UISceneSession Lifecycle
-
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
@@ -42,41 +55,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-      let deviceTokenString = deviceToken.reduce("", {$0 + String(format: "%02X", $1)})
-      print("[Log] deviceToken :", deviceTokenString)
-        
-      Messaging.messaging().apnsToken = deviceToken
-    }
 }
 
+extension AppDelegate: UNUserNotificationCenterDelegate {
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        Messaging.messaging().apnsToken = deviceToken
+    }
+    
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        let userInfo = response.notification.request.content.title
+        print(response.notification)
+        print(response)
+        completionHandler()
+    }
+    
+    
+}
 
-////MARK:- FCM
-//extension AppDelegate: MessagingDelegate {
-//
-//    // 1) APN 등록 및 사용자 권한 받기
-//    private func setUserNotification() {
-//        UNUserNotificationCenter.current().delegate = self
-//
-//        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
-//        UNUserNotificationCenter.current().requestAuthorization(
-//        options: authOptions,
-//        completionHandler: {_, _ in })
-//
-//        application.registerForRemoteNotifications()
-//    }
-//
-//    // 2) 토큰 받기
-//    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String) {
-//        let dataDict:[String: String] = ["token": fcmToken]
-//        NotificationCenter.default.post(name: Notification.Name("FCMToken"), object: nil, userInfo: dataDict)
-//        // TODO: If necessary send token to application server.
-//    }
-//
-//    // 3) 받은 메시지 처리
-//    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any],
-//                     fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-//        // TODO: Handle data of notification
-//        completionHandler(UIBackgroundFetchResult.newData)
-//    }
-//}
+extension AppDelegate: MessagingDelegate {
+    func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
+        //이 값을 서버로
+        print("FCM Token: \(fcmToken ?? "")")
+        self.device_Token = fcmToken ?? ""
+        UserDefaults.standard.setValue(fcmToken, forKey: "FCMToken")
+    }
+    
+}

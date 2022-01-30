@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         self.window = UIWindow(windowScene: windowScene)
         
-        let vc = DetailPageViewController(nibName: "DetailPageViewController", bundle: nil)
+        let vc = SplashViewController()
         self.window?.rootViewController = vc
         self.window?.backgroundColor = .systemBackground
         self.window?.makeKeyAndVisible()

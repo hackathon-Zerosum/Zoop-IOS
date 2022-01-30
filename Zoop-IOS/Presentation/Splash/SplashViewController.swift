@@ -30,7 +30,7 @@ class SplashViewController: UIViewController {
     //MARK: - Actions
 
     @IBAction func loginBtn(_ sender: Any) {
-        let loginVC = LogInViewController(nibName: "LogInViewController", bundle: nil)
+        let loginVC = UserLogInViewController(nibName: "UserLoginViewController", bundle: nil)
         loginVC.modalPresentationStyle = .fullScreen
         self.present(loginVC, animated: true, completion: nil)
         

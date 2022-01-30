@@ -12,7 +12,7 @@ target 'Zoop-IOS' do
 	pod 'Kingfisher', '~> 7.0'
 
 	pod "TTGTagCollectionView"
-
+	pod 'Tabman', '~> 2.9'
 	pod 'TweeTextField'
 	pod 'AnyFormatKit', '~> 2.5.2'
 pod 'Firebase/Messaging'
